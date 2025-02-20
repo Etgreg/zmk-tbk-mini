@@ -8,6 +8,13 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
+if  SHIELD_TBKMINI_RIGHT
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+    default n
+
+endif
+
 if  SHIELD_TBKMINI_LEFT ||  SHIELD_TBKMINI_RIGHT
 
 config ZMK_SPLIT
